@@ -1,0 +1,114 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.notebook img {
+    width: 20rem;
+    z-index: 2;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container {
+    height: 100vh;
+    background: #18295f;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 40rem;
+    background: white;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.4), 0px 0px 50px rgb(0,0,0,0.2);
+    border-radius: 30px;
+    padding: 0rem 5rem;
+}
+
+.title {
+    transition: all 0.75s ease-out;
+}
+
+.notebook {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.75s ease-out;
+}
+
+.circle {
+    width: 18rem;
+    height: 18rem;
+    background: rgb(24,41,95);
+    background: linear-gradient(90deg, rgba(24,41,95,0.75) 0%, rgba(9,9,121,0.75) 15%, rgba(225,240,207,0.75) 100%);
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.info h1 {
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: dimgray;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.prices button {
+    padding: 0.5rem 2rem;
+    background: white;
+    border: none;
+    box-shadow: 0px 5px 10px rgb(0,0,0,0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #414141;
+}
+
+.prices button.active {
+    background: #414141;
+    color: white
+}
+
+.purchase {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+}
+
+.purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    border: none;
+    box-shadow: 0px 5px 10px rgb(0,0,0,0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: #18295f;
+    color: white;
+
+}
